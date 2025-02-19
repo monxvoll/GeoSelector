@@ -52,7 +52,7 @@
 
 ## 2️⃣ Agregar la base de datos
 
-- Coloca el archivo DataBase.accdb dentro de la carpeta resources.
+- Colocar el archivo DataBase.accdb dentro de la carpeta resources.
 
 ## 3️⃣ Configurar la conexión
 
