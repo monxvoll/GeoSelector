@@ -4,7 +4,7 @@ import java.sql.*;
 
 public class DatabaseConnection {
     public static void main(String[] args) {
-        String databasePath = "C:/ruta/a/tu/archivo.accdb"; // Cambia esto por tu ruta real
+        String databasePath = "C:/ruta/a/tu/archivo.accdb"; 
         String url = "jdbc:ucanaccess://" + databasePath;
 
         try (Connection conn = DriverManager.getConnection(url)) {
