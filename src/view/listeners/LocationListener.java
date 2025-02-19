@@ -1,4 +1,4 @@
-package graphicInterface.listeners;
+package view.listeners;
 
 import model.Country;
 import model.Department;
@@ -46,7 +46,6 @@ public class LocationListener {
             }
 
             geoService.loadCities(cityBox, selectedDepartment);
-
 
         };
     }

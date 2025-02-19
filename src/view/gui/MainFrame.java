@@ -1,6 +1,6 @@
-package graphicInterface.gui;
+package view.gui;
 
-import graphicInterface.listeners.LocationListener;
+import view.listeners.LocationListener;
 import model.Country;
 import model.Department;
 import model.City;
@@ -26,7 +26,7 @@ public class MainFrame extends JFrame {
 
         geoService = new GeoService();
 
-        // Barra de título personalizada
+
         JPanel titleBar = new JPanel();
         titleBar.setBackground(new Color(30, 30, 30));
         titleBar.setPreferredSize(new Dimension(getWidth(), 35));
@@ -60,7 +60,7 @@ public class MainFrame extends JFrame {
         titleBar.add(titleLabel, BorderLayout.WEST);
         titleBar.add(closeButton, BorderLayout.EAST);
 
-        // Panel principal
+
         JPanel panel = new JPanel();
         panel.setLayout(new GridLayout(3, 2, 10, 10));
         panel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
@@ -93,7 +93,7 @@ public class MainFrame extends JFrame {
         add(titleBar, BorderLayout.NORTH);
         add(panel, BorderLayout.CENTER);
 
-        // Carga de datos en los ComboBox
+        
         locationListener = new LocationListener(geoService, countryBox, departmentBox, cityBox);
         geoService.loadCountries(countryBox);
 

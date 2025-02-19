@@ -14,7 +14,7 @@ public class GeoService {
 
     public void loadCountries(JComboBox<Country> countryBox) {
         countryBox.removeAllItems();
-        countryBox.addItem(new Country(0, "Seleccionar")); // Opción predeterminada
+        countryBox.addItem(new Country(0, "Seleccionar"));
 
         List<Country> countries = controller.getCountries();
         for (Country country : countries) {

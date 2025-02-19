@@ -2,11 +2,9 @@ package main;
 
 
 import database.DatabaseConnection;
-import graphicInterface.gui.MainFrame;
-import model.Country;
+import view.gui.MainFrame;
 
 import java.sql.Connection;
-import java.util.List;
 
 
 public class Main {
